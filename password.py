@@ -7,9 +7,11 @@ while remain_time >= 1:
             break
     else:
         remain_time = remain_time - 1
-        print('輸入錯誤! 還有',remain_time, '次機會')
+        print('輸入錯誤!')
+        if remain_time > 0:
+            print('還有',remain_time, '次機會')
 if remain_time == 0:
-    print('輸入過多次錯誤 已取消輸入資格')
+    print('因輸入過多次錯誤 已取消輸入資格')
 
 
 
